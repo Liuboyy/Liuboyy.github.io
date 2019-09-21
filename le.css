@@ -18,7 +18,6 @@ ul {
   border: 2px solid red;
   margin: 100px auto;
   overflow: hidden;
-  opacity: 0.7;
 }
 #box li {
   width: 240px;
@@ -33,16 +32,6 @@ ul {
 .z {
   font-size: 40px;
   margin-left: 45%;
-}
-.wrap {
-  width: 100%;
-  position: relative;
-}
-.wrap .nn {
-  width: 1920px;
-  height: 1080px;
-  background: url(img/背景.jpg) no-repeat;
-  margin: 0 auto;
 }
 @keyframes top {
   from {

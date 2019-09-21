@@ -1,0 +1,204 @@
+@keyframes top {
+  from {
+    /* 从哪里开始 */
+    transform: translateY(0px);
+  }
+  to {
+    /* 到哪里结束  */
+    transform: translateY(850px);
+  }
+}
+@keyframes playerAnim {
+  0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+li {
+  list-style: none;
+}
+.z {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.z .x {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.z .x .left {
+  width: 100%;
+  height: 100%;
+}
+.z .x .left li {
+  background: url(../img/精灵图.png);
+  background-position: -504px -274px;
+  position: relative;
+  width: 22px;
+  height: 37px;
+  animation: top 8s linear infinite;
+}
+.z .x .left .z1 {
+  left: 100px;
+  top: 0px;
+}
+.z .x .left .z2 {
+  left: 200px;
+  top: -37px;
+}
+.z .x .left .z3 {
+  left: 300px;
+  top: -75px;
+}
+.z .x .left .z4 {
+  left: 400px;
+  top: -112px;
+}
+.z .x .left .z5 {
+  left: 500px;
+  top: -149px;
+}
+.z .x .left .z6 {
+  left: 600px;
+  top: -185px;
+}
+.z .x .left .z7 {
+  left: 700px;
+  top: -222px;
+}
+.z .x .left .z8 {
+  left: 800px;
+  top: -259px;
+}
+.z .x .left .z9 {
+  left: 900px;
+  top: -296px;
+}
+.z .x .left .z10 {
+  left: 1000px;
+  top: -333px;
+}
+.z .x .left .z11 {
+  left: 1100px;
+  top: -370px;
+}
+.z .x .left .z12 {
+  left: 1200px;
+  top: -407px;
+}
+.z .x .left .z13 {
+  left: 1300px;
+  top: -444px;
+}
+.z .x .left .z14 {
+  left: 1400px;
+  top: -482px;
+}
+.z .x .left .z15 {
+  left: 1500px;
+  top: -518px;
+}
+.z .x .left .z16 {
+  left: 1600px;
+  top: -555px;
+}
+.z .x .left .z17 {
+  left: 1700px;
+  top: -592px;
+}
+.z .y {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.z .y ul {
+  width: 100%;
+  height: 100%;
+}
+.z .y ul li {
+  background: url(../img/精灵图.png);
+  background-position: -504px -274px;
+  position: relative;
+  width: 22px;
+  height: 37px;
+  animation: top 8s linear infinite;
+}
+.z .y ul .y1 {
+  left: 0px;
+  top: 0px;
+}
+.z .y ul .y2 {
+  left: 0px;
+  top: -37px;
+}
+.z .y ul .y3 {
+  left: 0px;
+  top: -75px;
+}
+.z .y ul .y4 {
+  left: 0px;
+  top: -112px;
+}
+.z .y ul .y5 {
+  left: 0px;
+  top: -149px;
+}
+.z .y ul .y6 {
+  left: 0px;
+  top: -185px;
+}
+.z .y ul .y7 {
+  left: 0px;
+  top: -222px;
+}
+.z .y ul .y8 {
+  left: 0px;
+  top: -259px;
+}
+.z .y ul .y9 {
+  left: 0px;
+  top: -296px;
+}
+.z .y ul .y10 {
+  left: 0px;
+  top: -333px;
+}
+.z .y ul .y11 {
+  left: 0px;
+  top: -370px;
+}
+.z .y ul .y12 {
+  left: 0px;
+  top: -407px;
+}
+.z .y ul .y13 {
+  left: 0px;
+  top: -444px;
+}
+.z .y ul .y14 {
+  left: 0px;
+  top: -482px;
+}
+.z .y ul .y15 {
+  left: 0px;
+  top: -518px;
+}
+.z .y ul .y16 {
+  left: 0px;
+  top: -555px;
+}
+.z .y ul .y17 {
+  left: 0px;
+  top: -592px;
+}

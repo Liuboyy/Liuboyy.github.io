@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="le.css">
     <script src="./libs/jquery-1.12.4.js"></script>
 </head>
+
 <body>
     <button class="z">点击跳转下一页</button>
     <div id="box">
@@ -18,17 +20,22 @@
             <li><img src="./img/图4.jpg" alt=""></li>
             <li><img src="./img/图5.jpg" alt=""></li>
         </ul>
-</div>
+    </div>
     <script>
-        $('#box li').mouseenter(function(){
-            $(this).stop(true,false).animate({width:800}).siblings().stop(true,false).animate({width:100});
+        var obj = {
+            "ImgUrl": "http://img1.imgtn.bdimg.com/it/u=3253565124,1724635157&fm=26&gp=0.jpg" ,
+        }
+        $(document.body).css('backgroundImage', 'url(' + "'" + obj.ImgUrl + "'" + ')');
+        $('#box li').mouseenter(function () {
+            $(this).stop(true, false).animate({ width: 800 }).siblings().stop(true, false).animate({ width: 100 });
         })
-        $('#box').mouseleave(function(){
-            $(this).find('li').stop(true,false).animate({width:240});
+        $('#box').mouseleave(function () {
+            $(this).find('li').stop(true, false).animate({ width: 240 });
         });
-       $('.z').click(function(){
-        window.location.href='./index3.html'
-       })
+        $('.z').click(function () {
+            window.location.href = './index3.html'
+        })
     </script>
 </body>
+
 </html>

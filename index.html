@@ -6,12 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bj.css">
+    <link rel="stylesheet" href="css/bj2.css">
  <link rel="stylesheet" href="css/bootstrap.min.css">
  <script src="./libs/jquery-1.12.4.js"></script>
  <script src="./js/bootstrap.min.js"></script>
 </head>
 <body>
    <div class="main_wrap">
+     <div class="z">
+     <div class="x">
+       <ul class="left">
+         <li class="z1"></li>
+         <li class="z2"></li>
+         <li class="z3"></li>
+         <li class="z4"></li>
+         <li class="z5"></li>
+         <li class="z6"></li>
+         <li class="z7"></li>
+         <li class="z8"></li>
+         <li class="z9"></li>
+         <li class="z10"></li>
+         <li class="z11"></li>
+         <li class="z12"></li>
+         <li class="z13"></li>
+         <li class="z14"></li>
+         <li class="z15"></li>
+         <li class="z16"></li>
+         <li class="z17"></li>
+       </ul>
+       <ul class="right">
+          <li class="y1"></li>
+          <li class="y2"></li>
+          <li class="y3"></li>
+          <li class="y4"></li>
+          <li class="y5"></li>
+          <li class="y6"></li>
+          <li class="y7"></li>
+          <li class="y8"></li>
+          <li class="y9"></li>
+          <li class="y10"></li>
+          <li class="y11"></li>
+          <li class="y12"></li>
+          <li class="y13"></li>
+          <li class="y14"></li>
+          <li class="y15"></li>
+          <li class="y16"></li>
+          <li class="y17"></li>
+        </ul>
+     </div>
     <div class="header">
       <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
       <div class="copyright">
@@ -30,6 +72,7 @@
       </form>
     </div>
   </div>
+</div>
   <!-- 模态框 -->
   <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
       <div class="modal-dialog" role="document">
@@ -54,7 +97,7 @@
         var username = $('.input_txt').val();
         var password = $('.input_pass').val();
         if (username.trim().length == 0 || password.trim().length == 0) {
-          $('.modal-body>p').text('请输入用户名或密码');
+          $('.modal-body>p').text('请随便输入账号或密码就是不能为空');
           $('#myModal').modal();
           return;
         }else{
@@ -65,6 +108,7 @@
               });
         }
        })
+
   </script>
 </body>
 </html>

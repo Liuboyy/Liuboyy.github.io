@@ -11,7 +11,7 @@
 </head>
 
 <body>
-        <button class="z">点击跳转上一页</button>
+    <button class="z">点击跳转上一页</button>
     <div class="slider">
         <ul>
             <li><a href="#"><img src="./img/图2.jpg" alt=""></a></li>
@@ -29,18 +29,23 @@
 
 </body>
 <script>
-        var index = 0;
-        $('.arrow-right').click(function () {
-            index == $('.slider>ul>li').length - 1 ? index = 0 : index++;
-            $('.slider>ul>li').eq(index).fadeIn().siblings().fadeOut();
-        });
-        
-        $('.arrow-left').click(function () {
-            index == 0?index = $('.slider>ul>li').length - 1 : index--;
-            $('.slider>ul>li').eq(index).fadeIn().siblings().fadeOut();
-        });
-        $('.z').click(function(){
-        window.location.href='./index2.html'
-       })
-    </script>
+    var obj = {
+        "ImgUrl": "http://img3.imgtn.bdimg.com/it/u=142359560,973018195&fm=26&gp=0.jpg",
+    }
+    $(document.body).css('backgroundImage', 'url(' + "'" + obj.ImgUrl + "'" + ')');
+    var index = 0;
+    $('.arrow-right').click(function () {
+        index == $('.slider>ul>li').length - 1 ? index = 0 : index++;
+        $('.slider>ul>li').eq(index).fadeIn().siblings().fadeOut();
+    });
+
+    $('.arrow-left').click(function () {
+        index == 0 ? index = $('.slider>ul>li').length - 1 : index--;
+        $('.slider>ul>li').eq(index).fadeIn().siblings().fadeOut();
+    });
+    $('.z').click(function () {
+        window.location.href = './index2.html'
+    })
+</script>
+
 </html>
