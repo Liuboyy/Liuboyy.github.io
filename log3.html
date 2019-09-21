@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刘博雅主页2</title>
+    <link rel="stylesheet" href="le2.css">
+    <script src="./libs/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+        <button class="z">点击跳转上一页</button>
+    <div class="slider">
+        <ul>
+            <li><a href="#"><img src="./img/图2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./img/图7.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./img/图3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./img/图4.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./img/图5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./img/图6.jpg" alt=""></a></li>
+        </ul>
+        <div class="arrow">
+            <span class="arrow-left">&lt;</span>
+            <span class="arrow-right">&gt;</span>
+        </div>
+    </div>
+
+</body>
+<script>
+        var index = 0;
+        $('.arrow-right').click(function () {
+            index == $('.slider>ul>li').length - 1 ? index = 0 : index++;
+            $('.slider>ul>li').eq(index).fadeIn().siblings().fadeOut();
+        });
+        
+        $('.arrow-left').click(function () {
+            index == 0?index = $('.slider>ul>li').length - 1 : index--;
+            $('.slider>ul>li').eq(index).fadeIn().siblings().fadeOut();
+        });
+        $('.z').click(function(){
+        window.location.href='./log2.html'
+       })
+    </script>
+</html>

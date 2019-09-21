@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刘博雅主页</title>
+    <link rel="stylesheet" href="le.css">
+    <script src="./libs/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <button class="z">点击跳转下一页</button>
+    <div id="box">
+        <ul>
+            <li><img src="./img/图6.jpg" alt=""></li>
+            <li><img src="./img/图2.jpg" alt=""></li>
+            <li><img src="./img/图3.jpg" alt=""></li>
+            <li><img src="./img/图4.jpg" alt=""></li>
+            <li><img src="./img/图5.jpg" alt=""></li>
+        </ul>
+</div>
+    <script>
+        $('#box li').mouseenter(function(){
+            $(this).stop(true,false).animate({width:800}).siblings().stop(true,false).animate({width:100});
+        })
+        $('#box').mouseleave(function(){
+            $(this).find('li').stop(true,false).animate({width:240});
+        });
+       $('.z').click(function(){
+        window.location.href='./log3.html'
+       })
+    </script>
+</body>
+</html>
